@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cheating Monkey | New game for iOS and Android comming soon.</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--<div class="row" style="">
+    <div class="col-xs-2 topcolors" style="background-color:#1ABC9C;"></div>
+    <div class="col-xs-2 topcolors" style="background-color:#9B59B6;"></div>
+    <div class="col-xs-2 topcolors" style="background-color:#F39C12;"></div>
+    <div class="col-xs-2 topcolors" style="background-color:#E74C3C;"></div>
+    <div class="col-xs-2 topcolors" style="background-color:#2980B9;"></div>
+    <div class="col-xs-2 topcolors" style="background-color:#2ECC71;"></div>
+</div>-->
+<div class="jumbotron text-center">
+  <div class="max-width">
+    <div class="row">
+      <div class="col-xs-6"><strong class="logo">DNS Logo</strong></div>
+      <div class="col-xs-6"><a href="preskitt.pdf" class="signin-button">Press kit</a></div>
+    </div>
+
+
+    <!--<h1>Cheating Monkey</h1>-->
+    <img src="img/title.png" alt="Cheating Monkey Logo" class="title">
+    <h2>New game for iPhone and Android coming soon.</h2>
+    <form class="form-inline" style="">
+      <div class="input-group">
+        <input type="email" class="form-control input-lg" size="50" placeholder="E-mail, and we'll let you know when it's ready." required>
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-success btn-lg" onclick="alert('Sorry, not working yet...')">Notify Me</button>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!--<footer class="container-fluid text-center">
+  <p>&copy; Copyright 2016 DNS Mega Corp - All rights reseved</p>
+</footer>-->
+
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    });
+
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+      });
+    });
+  })
+</script>
+
+</body>
+</html>
