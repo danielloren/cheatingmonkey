@@ -33,13 +33,15 @@ body {
     background-image: url(../img/treeLeft1.png), url(../img/treeRight2.png), linear-gradient(#00aeee, #f3ed35);;
     background-position: left top, right top;
     background-repeat: no-repeat, no-repeat;
+    margin-bottom: 0;
 }
 img.title {
   align-content: center;
-  max-width: 40%;
+  max-width: 80%;
+  margin-top: 15px;
 }
 .max-width {
-  //max-width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .signin-button {
@@ -66,10 +68,20 @@ img.title {
   width: 80%;
   max-width: 500px;
 }
+.input-group-btn {
+
+  }
+footer {
+  background-color: #191919;
+  color: #FAFAFA;
+  padding: 10px;
+}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-
+@media (min-width: 600px) {
+  img.title {
+    width: 40%;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
